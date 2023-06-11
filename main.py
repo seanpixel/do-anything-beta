@@ -42,7 +42,7 @@ prompt = input("What do you want to do?\n")
 instructions = get_gorilla_response(prompt)
 print(instructions)
 
-openai.api_key = "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" or os.getenv("OPENAI_API_KEY")
+openai.api_key = "ENTER KEY HERE" or os.getenv("OPENAI_API_KEY")
 openai.api_base = "https://api.openai.com/v1"
 
 code = generate(f"The user wants to {prompt}. Write code to do this following the instructions. What you output will be ran for the user so make sure its python formatting:\n\n" + str(instructions) + "\n\Code in python format: ")
